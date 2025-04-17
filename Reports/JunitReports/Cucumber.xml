@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="113.265" tests="12" skipped="0" failures="2" errors="0">
+<testcase classname="Shopping on the demo store" name="Search the product" time="8.595">
+<system-out><![CDATA[
+Given the user is on Search product field...................................passed
+When user give the products name............................................passed
+Then search product display on the home page................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping on the demo store" name="Select the product from the drop down menu" time="8.887">
+<system-out><![CDATA[
+Given the user is on home page..............................................passed
+When user sort the product using drop down menu.............................passed
+Then sorted product display on the home page................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping on the demo store" name="Click the links on the footer" time="10.735">
+<system-out><![CDATA[
+Given the user is on home page..............................................passed
+When click the links on the footer..........................................passed
+Then redirect to the relevant page..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping on the demo store" name="Click the arrow icon on the page" time="8.442">
+<system-out><![CDATA[
+Given the user is on home page..............................................passed
+When click the arrow icon on the page.......................................passed
+Then redirect to the next page..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping on the demo store" name="View product details" time="10.919">
+<system-out><![CDATA[
+Given user is on home page..................................................passed
+When user clicks the belt...................................................passed
+Then user can see the details of the belt...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping on the demo store" name="Add product to cart" time="13.411">
+<system-out><![CDATA[
+Given user is on product details page.......................................passed
+When user choose the quentity...............................................passed
+And user clicks the add to cart button......................................passed
+And I view the cart.........................................................passed
+And I proceed to the checkout page..........................................passed
+Then I should be on the checkout page.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test the login functionality" name="Test the valid login" time="8.541">
+<failure/>
+<system-out><![CDATA[
+Given user is on login page.................................................passed
+When user enters username and password......................................passed
+And click on login button...................................................passed
+Then user should land on My Account pages...................................undefined
+]]></system-out>
+</testcase>
+<testcase classname="Test the login functionality" name="Test the fogot password" time="9.614">
+<system-out><![CDATA[
+Given user is on login page.................................................passed
+When user click lost your password link.....................................passed
+Then user redirect to the lost password page................................passed
+And when user give email address............................................passed
+And click the reset password button.........................................passed
+Then success message display on the page....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test the produt details on the store" name="Give the reviews in the product" time="7.947">
+<failure type="org.openqa.selenium.ElementNotInteractableException" message="element not interactable
+  (Session info: chrome=135.0.7049.86)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [327e0b2424164e5d2ad1297375869089, sendKeysToElement {value=[Ljava.lang.CharSequence;@5f14761c, id=f.3AB4EDDE21E411ED81A1BBDE2F376464.d.FD10FA46E015A3F13DBF750BDA18F223.e.7}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\param\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56312}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56312/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (327e0b2424164e5d2ad1297375869089)] -&gt; id: rating]
+Session ID: 327e0b2424164e5d2ad1297375869089">
+<![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=135.0.7049.86)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [327e0b2424164e5d2ad1297375869089, sendKeysToElement {value=[Ljava.lang.CharSequence;@5f14761c, id=f.3AB4EDDE21E411ED81A1BBDE2F376464.d.FD10FA46E015A3F13DBF750BDA18F223.e.7}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.86, chrome: {chromedriverVersion: 135.0.7049.95 (de2eb485a195..., userDataDir: C:\Users\param\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56312}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56312/devtoo..., se:cdpVersion: 135.0.7049.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (327e0b2424164e5d2ad1297375869089)] -> id: rating]
+Session ID: 327e0b2424164e5d2ad1297375869089
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at com.stefdefinition.ProductSteps.user_give_the_ratings(ProductSteps.java:55)
+	at ✽.user give the ratings(file:///D:/Eclipse%20EE/CucumberProject/src/test/resources/Product.feature:15)
+]]>
+</failure>
+<system-out><![CDATA[
+Given the user is on  product detail page...................................passed
+When user give the ratings..................................................failed
+And the user give review, name and email....................................skipped
+And the user click the submit button........................................skipped
+Then review successfully saved..............................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Test the Register functionality" name="Test the Register login" time="8.147">
+<system-out><![CDATA[
+Given user is on register page..............................................passed
+When user enters email and password.........................................passed
+And click on register button................................................passed
+Then user should land on home pages.........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test the Register functionality" name="Test the privacy policy link" time="9.124">
+<system-out><![CDATA[
+Given user is on register page..............................................passed
+When user click privacy policy link.........................................passed
+Then user should land on privacy policy page................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test the Register functionality" name="Test the product category" time="8.647">
+<system-out><![CDATA[
+Given user is on the privacy policy page....................................passed
+When user clicks the product category.......................................passed
+Then user can see the related products belongs to the category..............passed
+]]></system-out>
+</testcase>
+</testsuite>

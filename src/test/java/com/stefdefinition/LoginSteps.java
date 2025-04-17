@@ -25,7 +25,7 @@ public class LoginSteps {
 	@When("user enters username and password")
 	public void user_enters_username_and_password() {
 		System.out.println("Step 2");
-		driver.findElement(By.id("username")).sendKeys("istqbflpp@gmail.com");
+		driver.findElement(By.id("username")).sendKeys("abc@gmail.com");
 		driver.findElement(By.name("password")).sendKeys("A12*R236m");
 	}
 
@@ -60,7 +60,7 @@ public class LoginSteps {
 	@Then("when user give email address")
 	public void when_user_give_email_address() {
 		System.out.println("Step 7");
-		driver.findElement(By.id("user_login")).sendKeys("istqbflpp@gmail.com");
+		driver.findElement(By.id("user_login")).sendKeys("abc@gmail.com");
 
 	}
 

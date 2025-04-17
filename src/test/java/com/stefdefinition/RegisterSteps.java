@@ -24,7 +24,7 @@ public class RegisterSteps {
 	@When("user enters email and password")
 	public void user_enters_email_and_password() {
 		System.out.println("Step 2");
-		driver.findElement(By.id("reg_email")).sendKeys("istqbflpp@gmail.com");
+		driver.findElement(By.id("reg_email")).sendKeys("abc@gmail.com");
 		driver.findElement(By.id("password")).sendKeys("A12*R236m");
 	}
 

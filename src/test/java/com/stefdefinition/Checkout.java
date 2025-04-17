@@ -60,13 +60,13 @@ public class Checkout {
     public void user_give_relevant_details() {
         System.out.println("Step 7");
         driver.findElement(By.id("billing_first_name")).sendKeys("Amal");
-        driver.findElement(By.id("billing_last_name")).sendKeys("Liyanage");
+        driver.findElement(By.id("billing_last_name")).sendKeys("Perera");
         driver.findElement(By.id("billing_address_1")).sendKeys("No. 123, Main St");
         driver.findElement(By.id("billing_address_2")).sendKeys("Union Villa");
         driver.findElement(By.id("billing_city")).sendKeys("LA");
         driver.findElement(By.id("billing_postcode")).sendKeys("30012");
         driver.findElement(By.id("billing_phone")).sendKeys("021341638");
-        driver.findElement(By.id("billing_email")).sendKeys("istqbflpp@gmail.com");
+        driver.findElement(By.id("billing_email")).sendKeys("abc@gmail.com");
 
         driver.findElement(By.cssSelector("#select2-billing_country-container")).click();
         driver.findElement(By.xpath("//li[text()='United States (US)']")).click();
